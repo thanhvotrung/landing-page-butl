@@ -420,7 +420,7 @@
                                     <label for="current_place">Nơi ở hiện tại
                                         <span class="text-danger">(*)</span>
                                     </label>
-                                    <select class="form-control form-select"
+                                    <!-- <select class="form-control form-select"
                                             id="current_place" name="current_place"
                                             required>
                                         <option disabled selected value="">Chọn nơi ở hiện tại</option>
@@ -428,11 +428,15 @@
                                         <option value="3">Đà Nẵng</option>
                                         <option value="4">Hải Phòng</option>
                                         <option value="5">Cần Thơ</option>
-                                    </select>
+                                    </select> -->
 
+                                    <input type="text"
+                                           required
+                                           class="form-control" id="current_place" name="current_place"
+                                           placeholder="Nhập nơi ở hiện tại...">
                                 </div>
                                 <div class="form-group col-md-6 col-lg-6 col-12">
-                                    <label for="current_city">Nơi ở hiện tại
+                                    <label for="current_city">Đang sinh sống ở
                                         <span class="text-danger">(*)</span>
                                     </label>
                                     <select class="form-control form-select"
@@ -443,8 +447,8 @@
                                         </option>
                                         <option value="2">Hồ Chí Minh</option>
                                         <option value="3">Đà Nẵng</option>
-                                        <option value="4">Hải Phòng</option>
-                                        <option value="5">Cần Thơ</option>
+                                        <option value="4">Hà Nội</option>
+                                        <option value="5">Huế</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6 col-lg-6 col-12">
@@ -457,14 +461,12 @@
                                         <option disabled selected value="">
                                             Chọn giấy tờ hiện có
                                         </option>
-                                        <option value="2">Hồ Chí Minh</option>
-                                        <option value="3">Đà Nẵng</option>
-                                        <option value="4">Hải Phòng</option>
-                                        <option value="5">Cần Thơ</option>
+                                        <option value="2">CCCD gắn chip + GPLX B2 trở lên</option>
+                                        <option value="3">VNeID tích hợp GPLX B2 trở lên</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="bol">Xác nhận đồng ý chia sẽ thông tin
+                                    <label for="bol">Xác nhận đồng ý chia sẻ thông tin
                                         <span class="text-danger">(*)</span>
                                     </label>
                                     <div class="pricing-check">

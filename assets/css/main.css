@@ -2120,7 +2120,7 @@ ol {
     line-height: 70px;
     color: #1C1C1E;
     /*text-shadow: 0px 3px 8px #00000017;*/
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 .hero-area .hero-content h1 span {
