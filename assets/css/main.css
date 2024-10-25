@@ -1042,7 +1042,7 @@ ol {
 }
 
 .section {
-    /*padding-top: 100px;*/
+    padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
 }
@@ -1056,7 +1056,8 @@ ol {
 
 @media (max-width: 767px) {
     .section {
-        /*padding-top: 60px;*/
+        padding-top: 60px;
+        /*padding-top: 30px;*/
         padding-bottom: 60px;
     }
 }
@@ -1084,7 +1085,7 @@ ol {
     font-size: 60px;
     font-weight: 600;
     line-height: 72px;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
     /*text-transform: capitalize;*/
     position: relative;
 }
@@ -2143,6 +2144,7 @@ ol {
 
 .hero-area .hero-content .button .btn {
     background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
     color: #fff;
     border-radius: 10px;
     padding: 20px 24px;
@@ -2154,8 +2156,13 @@ ol {
 }
 
 .hero-area .hero-content .button .btn:hover {
-    background-color: #1C1C1E;
-    color: #fff;
+    background-color: #fff;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.hero-area .hero-content .button .btn:hover svg {
+    color: var(--color-primary) !important;
 }
 
 .hero-area .hero-content .button .btn.btn-alt {
@@ -2433,8 +2440,8 @@ ol {
         margin-bottom: 0;
     }
 
-    .features .single-feature {
-
+    .features .features-body .row {
+        margin-top: 0;
     }
 }
 
@@ -2808,6 +2815,13 @@ ol {
 
 @media (max-width: 767px) {
     .call-action .cta-content {
+        padding: 0;
+    }
+
+    .call-action .container {
+        height: auto;
+    }
+    .call-action .contain {
         padding: 0;
     }
 }
@@ -3301,6 +3315,10 @@ ol {
     padding-right: 30px;
 }
 
+.footer .single-footer.f-about a {
+    color: #fff;
+}
+
 @media (max-width: 767px) {
     .footer .single-footer.f-about {
         padding: 0 0 15px 0;
@@ -3346,11 +3364,13 @@ ol {
 .footer .social li a {
     color: #D2D6DC;
     font-size: 15px;
+    transition: background 0.3s ease;
 }
 
 .footer .social li a:hover {
-    color: var(--color-primary);
+    color: #fff;
 }
+
 
 .footer .social li:last-child {
     margin: 0;
@@ -3397,6 +3417,8 @@ ol {
     font-weight: 500;
     line-height: 32px;
     color: #FFF;
+    transition: background 0.3s ease;
+
 }
 
 .footer .single-footer.f-link li a:hover {
@@ -3670,4 +3692,150 @@ ol {
 
 .features .features-body .features-image {
     padding-left: 30px;
+}
+
+.floating-buttons {
+    position: fixed;
+    bottom: 94px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1000;
+}
+
+.floating-button {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.phone-button {
+    background: linear-gradient(180deg, #FF4747 0%, #E00707 50%, #D60303 100%);
+    box-shadow: 0 4px 6px rgba(255, 68, 68, 0.2);
+}
+
+.phone-button:hover {
+    background-color: #ff2222;
+    box-shadow: 0 0 15px #ff4444,
+    0 0 25px rgba(255, 68, 68, 0.5),
+    0 0 35px rgba(255, 68, 68, 0.3);
+    transform: scale(1.05);
+}
+
+.zalo-button {
+    background: linear-gradient(180deg, #4791FF 0%, #075EE0 50%, #0358D6 100%);
+    box-shadow: 0 4px 6px rgba(0, 104, 255, 0.2);
+}
+
+.zalo-button:hover {
+    background-color: #0055cc;
+    box-shadow: 0 0 15px #0068ff,
+    0 0 25px rgba(0, 104, 255, 0.5),
+    0 0 35px rgba(0, 104, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Thêm hiệu ứng pulse để tăng thêm sự chú ý */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 68, 68, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 68, 68, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 68, 68, 0);
+    }
+}
+
+.phone-button {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse-blue {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 104, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 104, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 104, 255, 0);
+    }
+}
+
+.zalo-button {
+    animation: pulse-blue 2s infinite;
+}
+
+.scroll-top {
+     width: 45px;
+     height: 45px;
+     background-color: #F47621;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 6px;
+     position: fixed;
+     bottom: 30px;
+     right: 30px;
+     color: white;
+     text-decoration: none;
+     transition: all 0.3s ease;
+     box-shadow: 0 2px 8px rgba(244, 118, 33, 0.3);
+ }
+
+/* Hiệu ứng pulse liên tục */
+@keyframes pulse-orange {
+    0% {
+        box-shadow: 0 0 0 0 rgba(244, 118, 33, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(244, 118, 33, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(244, 118, 33, 0);
+    }
+}
+
+.scroll-top {
+    animation: pulse-orange 2s infinite;
+}
+
+/* Hiệu ứng hover */
+.scroll-top:hover {
+    background-color: #e06615;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px #F47621,
+    0 0 25px rgba(244, 118, 33, 0.5),
+    0 0 35px rgba(244, 118, 33, 0.3);
+}
+
+/* Style cho icon */
+.scroll-top i {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.scroll-top:hover i {
+    transform: translateY(-2px);
+}
+
+.swal2-container.swal2-center>.swal2-popup {
+    padding: 10px;
+    border-radius: 10px;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.swal2-popup .swal2-styled.swal2-confirm {
+    border-radius: 10px;
 }

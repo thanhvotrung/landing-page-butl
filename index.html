@@ -8,6 +8,53 @@
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/butl.ico"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <meta property="og:title" content="Tuyển dụng Tài xế Bạn Uống Tôi Lái">
+    <meta property="og:description" content="Thu nhập hấp dẫn lên đến 20 triệu đồng/tháng, đăng ký trở thành tài xế BUTL ngay hôm nay!">
+    <meta property="og:url" content="https://tuyentaixe.butl.vn/">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <meta name="og:description"
+          content="Thu nhập hấp dẫn lên đến 20 triệu đồng/tháng, đăng ký trở thành tài xế BUTL ngay hôm nay!" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="geo.region" content="VN-SG" />
+    <meta name="geo.placename" content="Thanh pho Ho Chi Minh" />
+    <meta name="geo.position" content="10.729374;106.723387" />
+    <meta name="ICBM" content="10.729374, 106.723387" />
+    <meta name="google" content="notranslate" />
+    <meta name="description"
+          content="Thu nhập hấp dẫn lên đến 20 triệu đồng/tháng, đăng ký trở thành tài xế BUTL ngay hôm nay!" />
+    <meta property="og:image" content="https://tuyentaixe.butl.vn/assets/images/thumbnail-tuyen-tai-xe-butl.png"/>
+    <meta name="revisit-after" content="1 days">
+    <meta property="og:type" content="website">
+    <meta property="keywords"
+          content="tim viec lam, việc làm phổ thông, việc làm thừa thiên huế, việc làm quảng ngãi, việc làm bình định, việc làm phú yên,
+	việc làm nha trang, việc làm lâm đồng, việc làm đà lạt, việc làm part time, tìm việc làm ngay, bship, xanh sm, tuyển tài xe, tim viec lai xe, cần tuyển lái xe,
+	tuyen lái xe, tuyển lái xe đi làm ngay, tim viec lái xe, tìm việc làm tài xế, việc làm tài xế, vinfast tuyển dụng lái xe, tai xe, tuyển lái xe mới nhất, can tuyen tai xe
+	tìm việc làm chạy xe, tìm việc lái xe mới nhất">
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRVJ04XN11"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+    gtag('config', 'G-MRVJ04XN11');
+    </script>
+    <!-- End Google tag (gtag.js) -->
+
+
+    <!-- Meta Pixel Code -->
+    <script>!function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '521949364021255');fbq('track', 'PageView');
+    </script><noscript><img height="1" width="1" style="display:none"
+                            src="https://www.facebook.com/tr?id=521949364021255&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Meta Pixel Code -->
 
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
@@ -15,7 +62,9 @@
     <link rel="stylesheet" href="assets/css/animate.css"/>
     <link rel="stylesheet" href="assets/css/tiny-slider.css"/>
     <link rel="stylesheet" href="assets/css/glightbox.min.css"/>
+    <link rel="stylesheet" href="assets/css/sweetalert2.min.css"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
+
 </head>
 
 <body>
@@ -64,26 +113,26 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="#features" class="page-scroll"
-                                       aria-label="Toggle navigation">Về BUTL</a>
+                                       aria-label="Toggle navigation">Tuyển dụng</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="javascript:void(0)" aria-label="Toggle navigation">Bạn Uống Tôi Lái</a>
+                                    <a href="#condition" aria-label="Điều kiện">Điều kiện</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#pricing" class="page-scroll"
-                                       aria-label="Toggle navigation">Thuê tài xế</a>
+                                       aria-label="Toggle navigation">Đăng ký ngay</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="#features" class="page-scroll"
-                                       aria-label="Toggle navigation">Dịch vụ liên kết</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#features" class="page-scroll"
-                                       aria-label="Toggle navigation">Tin tức</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="javascript:void(0)" aria-label="Toggle navigation">Liên hệ</a>
-                                </li>
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#features" class="page-scroll"-->
+<!--                                       aria-label="Toggle navigation">Dịch vụ liên kết</a>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#features" class="page-scroll"-->
+<!--                                       aria-label="Toggle navigation">Tin tức</a>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="javascript:void(0)" aria-label="Toggle navigation">Liên hệ</a>-->
+<!--                                </li>-->
                                 <!--                                    <li class="nav-item">-->
                                 <!--                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"-->
                                 <!--                                            data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent"-->
@@ -102,7 +151,7 @@
                             </ul>
                         </div> <!-- navbar collapse -->
                         <div class="button add-list-button">
-                            <a href="javascript:void(0)" class="btn">Tải ứng dụng ngay</a>
+                            <a href="https://onelink.to/banuongtoilai" target="_blank" class="btn">Tải ứng dụng ngay</a>
                         </div>
                     </nav>
                     <!-- End Navbar -->
@@ -133,7 +182,7 @@
                     <!--                        <p class="wow fadeInLeft" data-wow-delay=".6s">From open source to pro services, Piqes helps you-->
                     <!--                            to build, deploy, test, and monitor apps.</p>-->
                     <div class="button wow fadeInLeft" data-wow-delay=".8s">
-                        <a href="javascript:void(0)" class="btn btn-alt">
+                        <a href="tel:0908084499" class="btn btn-alt">
                             <svg width="30" height="30" viewBox="0 0 60 60" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M52.1965 37.4609H50.7305C56.9073 29.5865 56.3863 18.1292 49.1404 10.877C45.3507 7.08419 40.3115 4.99451 34.9517 4.99451C29.5918 4.99451 24.5526 7.08419 20.7624 10.877C20.3473 11.2926 20.3473 11.967 20.7634 12.3816C21.178 12.7973 21.8524 12.7973 22.2681 12.3816C25.6562 8.98994 30.1608 7.12264 34.9517 7.12264C39.7425 7.12264 44.2471 8.98994 47.6347 12.3816C53.948 18.6992 54.5429 28.5837 49.4599 35.5992V34.7208C49.4599 34.1326 48.9835 33.6567 48.3959 33.6567C47.8082 33.6567 47.3318 34.1326 47.3318 34.7208V38.4825C47.3202 38.7693 47.4165 39.0589 47.6357 39.2773C47.843 39.4852 48.1153 39.5891 48.3875 39.5891C48.389 39.5891 48.3903 39.5882 48.3918 39.5882C48.3932 39.5882 48.3944 39.5891 48.3959 39.5891H52.1965C52.7841 39.5891 53.2605 39.1132 53.2605 38.525C53.2605 37.9369 52.7841 37.4609 52.1965 37.4609Z"
@@ -153,11 +202,13 @@
                             <!--                            <img src="./assets/images/icons/phone-2.svg" alt="icon">-->
                             Liên hệ
                         </a>
-                        <a href="javascript:void(0)" class="btn">Đăng ký ngay
+                        <a href="#pricing" class="btn">Đăng ký ngay
+                            <i class="fas fa-arrow-right"></i>
                             <svg width="30" height="30" viewBox="0 0 31 31" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.99414 15.75H24.4941M24.4941 15.75L19.4941 20.75M24.4941 15.75L19.4941 10.75"
-                                      stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      fill="currentColor"
+                                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
 
                         </a>
@@ -171,7 +222,7 @@
 <!-- End Hero Area -->
 
 <!-- Start Features Area -->
-<section id="features" class="features section">
+    <section id="features" class="features section">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -251,8 +302,8 @@
             </div>
 
             <div class="col-lg-6 col-md-6 col-12 order-md-1 order-lg-1 order-2 features-image">
-                <div class="">
-                    <img loading="lazy" src="assets/images/hero/hero-2.png" alt="#">
+                <div class="wow fadeInUp" data-wow-delay=".2s">
+                    <img loading="lazy" src="assets/images/hero/hero-4.png" alt="#">
                 </div>
             </div>
 
@@ -300,7 +351,7 @@
 <!-- End Features Area -->
 
 <!-- Start Call To Action Area -->
-<section class="section call-action">
+<section id="condition" class="section call-action">
     <div class="container">
         <div class="contain">
             <div class="row">
@@ -371,31 +422,31 @@
                     <!-- Start Table Content -->
                     <div class="table-content ">
                         <div class="form-container">
-                            <form class="form-content row" action="">
+                            <form id="driverApplicationForm" class="form-content row" action="">
                                 <div class="form-group col-12">
-                                    <label for="area">Khu vực hoạt động của tài xế
+                                    <label for="desired_driver_area">Khu vực hoạt động của tài xế
                                         <span class="text-danger">(*)</span>
                                     </label>
                                     <select class="form-control form-select"
-                                            id="area" name="area"
+                                            id="desired_driver_area" name="desired_driver_area"
                                             required>
                                         <option disabled selected value="">Chọn khu vực hoạt động của tài xế</option>
-                                        <option value="1">Hồ Chí Minh</option>
-                                        <option value="2">Hà Nội</option>
-                                        <option value="3">Huế</option>
-                                        <option value="4">Đà Nẵng</option>
-                                        <option value="5">Biên Hòa</option>
-                                        <option value="6">Đồng Nai</option>
-                                        <option value="7">Bình Dương</option>
+                                        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                        <option value="Hà Nội">Hà Nội</option>
+                                        <option value="Huế">Huế</option>
+                                        <option value="Đà Nẵng">Đà Nẵng</option>
+                                        <option value="Biên Hòa">Biên Hòa</option>
+                                        <option value="Đồng Nai">Đồng Nai</option>
+                                        <option value="Bình Dương">Bình Dương</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6 col-lg-6 col-12">
-                                    <label for="name">Họ và tên
+                                    <label for="full_name">Họ và tên
                                         <span class="text-danger">(*)</span>
                                     </label>
                                     <input type="text"
                                            required
-                                           class="form-control" id="name" name="name"
+                                           class="form-control" id="full_name" name="full_name"
                                            placeholder="Nhập họ và tên...">
                                 </div>
                                 <div class="form-group col-md-6 col-lg-6 col-12">
@@ -408,18 +459,18 @@
                                            placeholder="__/__/__">
                                 </div>
                                 <div class="form-group col-md-6 col-lg-6 col-12">
-                                    <label for="phone">Số điện thoại liên hệ
+                                    <label for="phone_number">Số điện thoại liên hệ
                                         <span class="text-danger">(*)</span>
                                     </label>
                                     <input type="text"
                                            pattern="[0-9]*"
                                            inputmode="numeric"
                                            required
-                                           class="form-control" id="phone" name="phone"
+                                           class="form-control" id="phone_number" name="phone_number"
                                            placeholder="+84">
                                 </div>
                                 <div class="form-group col-md-6 col-lg-6 col-12">
-                                    <label for="current_place">Nơi ở hiện tại
+                                    <label for="current_address">Nơi ở hiện tại
                                         <span class="text-danger">(*)</span>
                                     </label>
                                     <!-- <select class="form-control form-select"
@@ -434,7 +485,7 @@
 
                                     <input type="text"
                                            required
-                                           class="form-control" id="current_place" name="current_place"
+                                           class="form-control" id="current_address" name="current_address"
                                            placeholder="Nhập nơi ở hiện tại...">
                                 </div>
                                 <div class="form-group col-md-6 col-lg-6 col-12">
@@ -447,45 +498,47 @@
                                         <option disabled selected value="">
                                             Chọn tỉnh/thành phố đang sinh sống
                                         </option>
-                                        <option value="1">Hồ Chí Minh</option>
-                                        <option value="2">Hà Nội</option>
-                                        <option value="3">Huế</option>
-                                        <option value="4">Đà Nẵng</option>
-                                        <option value="5">Biên Hòa</option>
-                                        <option value="6">Đồng Nai</option>
-                                        <option value="7">Bình Dương</option>
+                                        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                        <option value="Hà Nội">Hà Nội</option>
+                                        <option value="Huế">Huế</option>
+                                        <option value="Đà Nẵng">Đà Nẵng</option>
+                                        <option value="Biên Hòa">Biên Hòa</option>
+                                        <option value="Đồng Nai">Đồng Nai</option>
+                                        <option value="Bình Dương">Bình Dương</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6 col-lg-6 col-12">
-                                    <label for="id_card">Đã có
+                                    <label for="identification">Đã có
                                         <span class="text-danger">(*)</span>
                                     </label>
                                     <select class="form-control form-select"
-                                            id="id_card" name="id_card"
+                                            id="identification" name="identification"
                                             required>
                                         <option disabled selected value="">
                                             Chọn giấy tờ hiện có
                                         </option>
-                                        <option value="2">CCCD gắn chip + GPLX B2 trở lên</option>
-                                        <option value="3">VNeID tích hợp GPLX B2 trở lên</option>
+                                        <option value="CCCD gắn chip + GPLX B2 trở lên">CCCD gắn chip + GPLX B2 trở lên</option>
+                                        <option value="VNeID tích hợp GPLX B2 trở lên">VNeID tích hợp GPLX B2 trở lên</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="bol">Xác nhận đồng ý chia sẻ thông tin
+                                    <label for="agree_to_share_info">Xác nhận đồng ý chia sẻ thông tin
                                         <span class="text-danger">(*)</span>
                                     </label>
                                     <div class="pricing-check">
                                         <input type="checkbox"
-                                               class="form-check-input" id="bol" name="bol"
+                                               class="form-check-input" id="agree_to_share_info" name="agree_to_share_info"
                                                placeholder="Nhập số CMND/CCCD...">
                                         <span>
                                             Đồng ý và liên hệ
-                                            <a class="text-primary" href="">https://zalo.me/banuongtoilai</a>
+                                            <a class="text-primary" href="https://zalo.me/banuongtoilai" target="_blank">https://zalo.me/banuongtoilai</a>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="form-group text-center">
-                                    <button type="submit" class="btn btn-primary">Đăng ký ngay</button>
+                                    <button  type="submit" id="submitButton" class="btn btn-primary">
+                                        Đăng ký ngay
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -528,7 +581,7 @@
                     <p class="wow fadeInUp" data-wow-delay=".4s">
                         Ứng dụng "Đưa người say về nhà" đầu tiên tại Việt Nam. Chỉ cần 5 phút - Tài xế đến ngay!
                     </p>
-                    <a href="javascript:void(0)" class="btn btn-primary wow fadeInUp" data-wow-delay=".5s">Đặt tài xế ngay</a>
+                    <a href="https://datchuyen.butl.vn/home" target="_blank" class="btn btn-primary wow fadeInUp" data-wow-delay=".5s">Đặt tài xế ngay</a>
 
                     <span class="wow fadeInUp" data-wow-delay=".6s">
                         Hoặc tải ứng dụng
@@ -540,10 +593,10 @@
                     </div>
 
                     <div class="app-store">
-                        <a href="javascript:void(0)" class="wow fadeInUp" data-wow-delay=".8s">
+                        <a href="https://onelink.to/banuongtoilai" target="_blank" class="wow fadeInUp" data-wow-delay=".8s">
                             <img loading="lazy" src="assets/images/app-store.png" alt="app-store">
                         </a>
-                        <a href="javascript:void(0)" class="wow fadeInUp" data-wow-delay=".9s">
+                        <a href="https://onelink.to/banuongtoilai" target="_blank" class="wow fadeInUp" data-wow-delay=".9s">
                             <img loading="lazy" src="assets/images/google-play.png" alt="google-play">
                         </a>
                     </div>
@@ -571,16 +624,18 @@
                         <h3 class="main">CÔNG TY CỔ PHẦN DỊCH VỤ BẠN UỐNG TÔI LÁI</h3>
 
                         <p class="info-text">
-                            Địa Chỉ: Số 24 Đường DN7, P. Tân Hưng Thuận, Q. 12, TP. HCM
+                            <a href="https://maps.app.goo.gl/xSL65VpzqBjhtkRR7" target="_blank">
+                                Địa Chỉ: Số 24 Đường DN7, P. Tân Hưng Thuận, Q. 12, TP. HCM
+                            </a>
                         </p>
                         <p class="info-text">
                             MST: 0314372721
                         </p>
                         <p class="info-text">
-                            Hotline: 1900 9235 - 0908 08 4499
+                            Hotline: <a href="tel:19009235" target="_blank">1900 9235</a> - <a href="tel:0908 08 4499" target="_blank">0908 08 4499</a>
                         </p>
                         <p class="info-text">
-                            Email: info@banuongtoilai.vn
+                            Email: <a href="mailto:info@banuongtoilai.vn">info@banuongtoilai.vn</a>
                         </p>
                     </div>
                     <!-- End Single Widget -->
@@ -592,10 +647,10 @@
                             <div class="single-footer f-link">
                                 <h3>Về BUTL</h3>
                                 <ul>
-                                    <li><a href="javascript:void(0)">Giới thiệu</a></li>
+                                    <li><a href="javascript:void(0)" target="_blank">Giới thiệu</a></li>
                                     <li><a href="javascript:void(0)">Hướng dẫn đăng ký</a></li>
                                     <li><a href="javascript:void(0)">Điều khoản dịch vụ</a></li>
-                                    <li><a href="javascript:void(0)">Chính sách bảo mật</a></li>
+                                    <li><a href="javascript:void(0)" target="_blank">Chính sách bảo mật</a></li>
                                     <li><a href="javascript:void(0)">Tuyển dụng đối tác tài xế</a></li>
                                 </ul>
                             </div>
@@ -606,64 +661,69 @@
                             <div class="single-footer f-link">
                                 <h3>Các dịch vụ của BUTL</h3>
                                 <ul>
-                                    <li><a href="javascript:void(0)">Bạn uống tôi lái</a></li>
-                                    <li><a href="javascript:void(0)">Thuê tài xế ô tô</a></li>
-                                    <li><a href="javascript:void(0)">Thuê tài xế xe máy</a></li>
-                                    <li><a href="javascript:void(0)">Dịch vụ đăng kiểm hộ</a></li>
-                                    <li><a href="javascript:void(0)">Dịch vụ thuê xe</a></li>
+                                    <li><a href="javascript:void(0)"
+                                           target="_blank">Bạn uống tôi lái</a></li>
+                                    <li><a href="javascript:void(0)"
+                                           target="_blank">Thuê tài xế ô tô</a></li>
+                                    <li><a href="javascript:void(0)"
+                                           target="_blank">Thuê tài xế xe máy</a></li>
+                                    <li><a href="javascript:void(0)"
+                                           target="_blank">Dịch vụ đăng kiểm hộ</a></li>
+                                    <li><a href="javascript:void(0)"
+                                           target="_blank">Dịch vụ thuê xe</a></li>
                                 </ul>
                             </div>
                             <!-- End Single Widget -->
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 offset-md-6 offset-lg-6">
                             <ul class="social">
-                                <li><a href="javascript:void(0)">
-                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                <li><a href="https://www.facebook.com/laixegiupban" target="_blank" class="facebook">
+                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="currentColor"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_3406_4067)">
                                             <path d="M23.3346 23.007H27.5013L29.168 16.3403H23.3346V13.007C23.3346 11.2903 23.3346 9.67367 26.668 9.67367H29.168V4.07367C28.6246 4.002 26.573 3.84033 24.4063 3.84033C19.8813 3.84033 16.668 6.602 16.668 11.6737V16.3403H11.668V23.007H16.668V37.1737H23.3346V23.007Z"
-                                                  fill="white"/>
+                                                  fill="currentColor"/>
                                         </g>
                                         <defs>
                                             <clipPath id="clip0_3406_4067">
-                                                <rect width="40" height="40" fill="white"
+                                                <rect width="40" height="40" fill="currentColor"
                                                       transform="translate(0 0.506348)"/>
                                             </clipPath>
                                         </defs>
                                     </svg>
                                 </a></li>
-                                <li><a href="javascript:void(0)">
-                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                <li><a href="https://www.instagram.com/butl.vn/" target="_blank" class="instagram">
+                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="currentColor"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_3406_4070)">
                                             <path d="M19.9987 15.507C18.6726 15.507 17.4008 16.0338 16.4632 16.9715C15.5255 17.9091 14.9987 19.1809 14.9987 20.507C14.9987 21.8331 15.5255 23.1049 16.4632 24.0425C17.4008 24.9802 18.6726 25.507 19.9987 25.507C21.3248 25.507 22.5966 24.9802 23.5342 24.0425C24.4719 23.1049 24.9987 21.8331 24.9987 20.507C24.9987 19.1809 24.4719 17.9091 23.5342 16.9715C22.5966 16.0338 21.3248 15.507 19.9987 15.507ZM19.9987 12.1737C22.2088 12.1737 24.3285 13.0516 25.8913 14.6144C27.4541 16.1772 28.332 18.2969 28.332 20.507C28.332 22.7171 27.4541 24.8368 25.8913 26.3996C24.3285 27.9624 22.2088 28.8403 19.9987 28.8403C17.7886 28.8403 15.6689 27.9624 14.1061 26.3996C12.5433 24.8368 11.6654 22.7171 11.6654 20.507C11.6654 18.2969 12.5433 16.1772 14.1061 14.6144C15.6689 13.0516 17.7886 12.1737 19.9987 12.1737ZM30.832 11.757C30.832 12.3095 30.6125 12.8394 30.2218 13.2301C29.8311 13.6208 29.3012 13.8403 28.7487 13.8403C28.1962 13.8403 27.6663 13.6208 27.2756 13.2301C26.8849 12.8394 26.6654 12.3095 26.6654 11.757C26.6654 11.2045 26.8849 10.6746 27.2756 10.2839C27.6663 9.89316 28.1962 9.67367 28.7487 9.67367C29.3012 9.67367 29.8311 9.89316 30.2218 10.2839C30.6125 10.6746 30.832 11.2045 30.832 11.757ZM19.9987 7.17367C15.8754 7.17367 15.202 7.18533 13.2837 7.27033C11.977 7.332 11.1004 7.507 10.287 7.82367C9.5637 8.10367 9.04203 8.43867 8.48703 8.99533C7.96538 9.49933 7.56429 10.1146 7.3137 10.7953C6.99703 11.612 6.82203 12.487 6.76203 13.792C6.67536 15.632 6.66536 16.2753 6.66536 20.507C6.66536 24.6303 6.67703 25.3037 6.76203 27.222C6.8237 28.527 6.9987 29.4053 7.3137 30.217C7.59703 30.942 7.93037 31.4637 8.4837 32.017C9.04536 32.577 9.56703 32.912 10.2837 33.1887C11.107 33.507 11.9837 33.6837 13.2837 33.7437C15.1237 33.8303 15.767 33.8403 19.9987 33.8403C24.122 33.8403 24.7954 33.8287 26.7137 33.7437C28.017 33.682 28.8954 33.507 29.7087 33.192C30.4304 32.9103 30.9554 32.5753 31.5087 32.022C32.0704 31.4603 32.4054 30.9387 32.682 30.222C32.9987 29.4003 33.1754 28.522 33.2354 27.222C33.322 25.382 33.332 24.7387 33.332 20.507C33.332 16.3837 33.3204 15.7103 33.2354 13.792C33.1737 12.4887 32.9987 11.6087 32.682 10.7953C32.4309 10.1153 32.0305 9.50027 31.5104 8.99533C31.0066 8.47341 30.3912 8.07228 29.7104 7.822C28.8937 7.50533 28.017 7.33033 26.7137 7.27033C24.8737 7.18367 24.2304 7.17367 19.9987 7.17367ZM19.9987 3.84033C24.527 3.84033 25.092 3.857 26.8687 3.94033C28.6437 4.02367 29.852 4.302 30.9154 4.71533C32.0154 5.13867 32.942 5.712 33.8687 6.637C34.7162 7.47016 35.372 8.47798 35.7904 9.59033C36.202 10.652 36.482 11.862 36.5654 13.637C36.6437 15.4137 36.6654 15.9787 36.6654 20.507C36.6654 25.0353 36.6487 25.6003 36.5654 27.377C36.482 29.152 36.202 30.3603 35.7904 31.4237C35.3732 32.5366 34.7172 33.5447 33.8687 34.377C33.0353 35.2242 32.0275 35.8799 30.9154 36.2987C29.8537 36.7103 28.6437 36.9903 26.8687 37.0737C25.092 37.152 24.527 37.1737 19.9987 37.1737C15.4704 37.1737 14.9054 37.157 13.1287 37.0737C11.3537 36.9903 10.1454 36.7103 9.08203 36.2987C7.96924 35.8811 6.96124 35.2252 6.1287 34.377C5.28104 33.544 4.62525 32.5361 4.20703 31.4237C3.7937 30.362 3.51536 29.152 3.43203 27.377C3.3537 25.6003 3.33203 25.0353 3.33203 20.507C3.33203 15.9787 3.3487 15.4137 3.43203 13.637C3.51536 11.8603 3.7937 10.6537 4.20703 9.59033C4.62409 8.4773 5.28004 7.4692 6.1287 6.637C6.96148 5.78905 7.96941 5.13321 9.08203 4.71533C10.1454 4.302 11.352 4.02367 13.1287 3.94033C14.9054 3.862 15.4704 3.84033 19.9987 3.84033Z"
-                                                  fill="white"/>
+                                                  fill="currentColor"/>
                                         </g>
                                         <defs>
                                             <clipPath id="clip0_3406_4070">
-                                                <rect width="40" height="40" fill="white"
+                                                <rect width="40" height="40" fill="currentColor"
                                                       transform="translate(0 0.506348)"/>
                                             </clipPath>
                                         </defs>
                                     </svg>
                                 </a></li>
-                                <li><a href="javascript:void(0)">
-                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                <li><a href="https://www.tiktok.com/@butlvn" target="_blank" class="tiktok">
+                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="currentColor"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M34.9839 12.1858C33.0322 12.1858 31.2314 11.5546 29.7853 10.4898C28.1268 9.2692 26.9351 7.47868 26.5143 5.41495C26.4101 4.90505 26.354 4.37884 26.3487 3.8396H20.7734V18.7115L20.7667 26.8575C20.7667 29.0354 19.3139 30.882 17.3 31.5314C16.7156 31.7199 16.0844 31.8092 15.4271 31.774C14.5882 31.729 13.802 31.4819 13.1187 31.0828C11.6646 30.2338 10.6787 28.6937 10.652 26.9319C10.6099 24.1783 12.8903 21.9333 15.709 21.9333C16.2654 21.9333 16.7997 22.022 17.3 22.183V18.1181V16.6569C16.7724 16.5806 16.2353 16.5408 15.6923 16.5408C12.6071 16.5408 9.72153 17.7928 7.65891 20.0482C6.09993 21.7527 5.1648 23.9272 5.02053 26.2074C4.8315 29.203 5.95431 32.0504 8.13182 34.1513C8.45176 34.4598 8.78774 34.746 9.13908 35.0101C11.006 36.4126 13.2884 37.1729 15.6923 37.1729C16.2353 37.1729 16.7724 37.1338 17.3 37.0575C19.5457 36.7328 21.6176 35.7293 23.2528 34.1513C25.2619 32.2128 26.3721 29.6392 26.3841 26.8999L26.3554 14.7353C27.3139 15.4571 28.3619 16.0544 29.4867 16.518C31.236 17.2385 33.0909 17.6037 34.9999 17.603V13.651V12.1845C35.0013 12.1858 34.9852 12.1858 34.9839 12.1858Z"
-                                              fill="white"/>
+                                              fill="currentColor"/>
                                     </svg>
                                 </a></li>
-                                <li><a href="javascript:void(0)">
-                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                <li><a href="https://www.youtube.com/@butlvn" target="_blank" class="youtube">
+                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="currentColor"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_3406_4076)">
                                             <path d="M35.9037 11.3357C36.6654 14.3057 36.6654 20.5057 36.6654 20.5057C36.6654 20.5057 36.6654 26.7057 35.9037 29.6757C35.4804 31.3174 34.242 32.609 32.6737 33.0457C29.8254 33.839 19.9987 33.839 19.9987 33.839C19.9987 33.839 10.177 33.839 7.3237 33.0457C5.7487 32.6024 4.51203 31.3124 4.0937 29.6757C3.33203 26.7057 3.33203 20.5057 3.33203 20.5057C3.33203 20.5057 3.33203 14.3057 4.0937 11.3357C4.51703 9.69403 5.75536 8.40236 7.3237 7.9657C10.177 7.17236 19.9987 7.17236 19.9987 7.17236C19.9987 7.17236 29.8254 7.17236 32.6737 7.9657C34.2487 8.40903 35.4854 9.69903 35.9037 11.3357ZM16.6654 26.339L26.6654 20.5057L16.6654 14.6724V26.339Z"
-                                                  fill="white"/>
+                                                  fill="currentColor"/>
                                         </g>
                                         <defs>
                                             <clipPath id="clip0_3406_4076">
-                                                <rect width="40" height="40" fill="white"
+                                                <rect width="40" height="40" fill="currentColor"
                                                       transform="translate(0 0.506348)"/>
                                             </clipPath>
                                         </defs>
@@ -686,13 +746,50 @@
     <i class="lni lni-chevron-up"></i>
 </a>
 
+<div class="floating-buttons">
+    <a href="tel:0908084499" target="_blank">
+    <button class="floating-button phone-button">
+        <svg width="31" height="31" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M38.2014 26.7014H37.0287C41.9699 20.4022 41.5531 11.2369 35.7567 5.43546C32.7251 2.40139 28.694 0.729736 24.4064 0.729736C20.1188 0.729736 16.0876 2.40139 13.0556 5.43546C12.7235 5.76796 12.7235 6.30745 13.0564 6.63912C13.3881 6.97162 13.9276 6.97162 14.2601 6.63912C16.9704 3.92591 20.5739 2.43214 24.4064 2.43214C28.2389 2.43214 31.8424 3.92591 34.5522 6.63912C39.6026 11.6929 40.0785 19.6 36.0123 25.2121V24.5094C36.0123 24.0389 35.6312 23.6582 35.1611 23.6582C34.6911 23.6582 34.3099 24.0389 34.3099 24.5094V27.5186C34.3006 27.7481 34.3777 27.9797 34.5531 28.1545C34.7189 28.3207 34.9367 28.4038 35.1545 28.4038C35.1556 28.4038 35.1567 28.4032 35.1579 28.4032C35.159 28.4032 35.16 28.4038 35.1611 28.4038H38.2014C38.6715 28.4038 39.0526 28.0231 39.0526 27.5526C39.0526 27.0821 38.6715 26.7014 38.2014 26.7014Z" fill="white"/>
+            <path d="M30.979 10.1353C30.6369 10.0139 30.2562 10.1262 30.0318 10.4121L26.2317 15.2301C26.0297 15.4861 25.9919 15.8352 26.134 16.1287C26.2766 16.4221 26.5738 16.6083 26.9 16.6083H29.8489V18.2641C29.8489 18.7346 30.23 19.1153 30.7001 19.1153C31.1702 19.1153 31.5513 18.7346 31.5513 18.2641V16.6083H32.553C33.023 16.6083 33.4042 16.2276 33.4042 15.7571C33.4042 15.2866 33.023 14.9059 32.553 14.9059H31.5513V10.9391C31.5513 10.5767 31.3215 10.2542 30.979 10.1353ZM29.8489 14.9059H28.6556L29.8489 13.393V14.9059Z" fill="white"/>
+            <path d="M20.1857 17.5942C19.8998 17.8178 19.7876 18.1985 19.906 18.5418C20.0245 18.8851 20.3474 19.1153 20.7107 19.1153H25.3499C25.82 19.1153 26.2011 18.7346 26.2011 18.2641C26.2011 17.7937 25.82 17.4129 25.3499 17.4129H23.0128C23.7722 16.6956 24.4172 15.979 24.9621 15.2508C25.8511 14.0638 26.1271 12.9375 25.7826 11.9017C25.374 10.6731 24.3108 9.94579 23.0777 10.0248C21.6949 10.1237 20.549 11.1893 20.2905 12.6174C20.2065 13.0796 20.5137 13.5227 20.9762 13.6066C21.443 13.6898 21.8819 13.383 21.9654 12.92C22.1055 12.1478 22.7028 11.7588 23.1986 11.723C23.4596 11.7014 23.9451 11.7721 24.1674 12.4387C24.3274 12.9208 24.1417 13.506 23.5993 14.2309C22.7618 15.3506 21.6454 16.4503 20.1857 17.5942Z" fill="white"/>
+            <path d="M34.4038 30.6839L29.2721 27.2616C28.6499 26.8485 27.9126 26.6299 27.1395 26.6299C25.8484 26.6299 24.6015 27.2277 23.7227 28.2397C27.9606 31.5144 31.9813 34.1034 35.5318 35.8394C35.6005 35.6977 35.6724 35.5589 35.7347 35.4112C36.477 33.6473 35.93 31.703 34.4038 30.6839Z" fill="white"/>
+            <path d="M13.9152 11.8901L10.4954 6.75466C9.51083 5.27586 7.49213 4.69897 5.77185 5.42299C5.63651 5.48009 5.50814 5.54783 5.37695 5.6109C7.07915 9.14612 9.66087 13.1699 12.9479 17.4156C14.584 15.9705 15.0407 13.5881 13.9152 11.8901Z" fill="white"/>
+            <path d="M22.068 30.4745C20.0851 29.2085 17.8968 27.4105 15.832 25.3432C13.7659 23.2758 11.9687 21.0847 10.704 19.1005L11.5958 18.4507C8.28908 14.1773 5.66912 10.1073 3.91512 6.50488L3.59177 6.74221C3.40224 6.89349 3.22435 7.05808 3.05353 7.22932C2.11047 8.17279 1.41014 9.33987 0.97207 10.699C-0.924019 16.5951 2.3852 25.1437 9.2073 31.9716C14.6902 37.4595 21.3133 40.7363 26.9242 40.7363C28.196 40.7363 29.3872 40.5609 30.4633 40.2143C31.8195 39.7762 32.9857 39.0755 33.9296 38.1312C34.1009 37.9599 34.265 37.782 34.4392 37.5634L34.637 37.2924C31.0236 35.508 26.9649 32.894 22.702 29.6024L22.068 30.4745Z" fill="white"/>
+        </svg>
+    </button>
+    </a>
+    <a href="https://zalo.me/banuongtoilai" target="_blank">
+    <button class="floating-button zalo-button">
+
+        <svg width="31" height="31" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.782 0.166016H27.199C33.2653 0.166016 36.8103 1.05701 39.9572 2.74421C43.1041 4.4314 45.5875 6.89585 47.2557 10.0428C48.9429 13.1897 49.8339 16.7347 49.8339 22.801V27.1991C49.8339 33.2654 48.9429 36.8104 47.2557 39.9573C45.5685 43.1042 43.1041 45.5877 39.9572 47.2559C36.8103 48.9431 33.2653 49.8341 27.199 49.8341H22.8009C16.7346 49.8341 13.1896 48.9431 10.0427 47.2559C6.89583 45.5687 4.41243 43.1042 2.7442 39.9573C1.057 36.8104 0.166016 33.2654 0.166016 27.1991V22.801C0.166016 16.7347 1.057 13.1897 2.7442 10.0428C4.43139 6.89585 6.89583 4.41245 10.0427 2.74421C13.1707 1.05701 16.7346 0.166016 22.782 0.166016Z" fill="#0068FF"/>
+            <path opacity="0.12" fill-rule="evenodd" clip-rule="evenodd" d="M49.8336 26.4736V27.1994C49.8336 33.2657 48.9427 36.8107 47.2555 39.9576C45.5683 43.1045 43.1038 45.5879 39.9569 47.2562C36.81 48.9434 33.265 49.8344 27.1987 49.8344H22.8007C17.8369 49.8344 14.5612 49.2378 11.8104 48.0966L7.27539 43.4267L49.8336 26.4736Z" fill="#001A33"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.779 43.5892C10.1019 43.846 13.0061 43.1836 15.0682 42.1825C24.0225 47.1318 38.0197 46.8954 46.4923 41.4732C46.8209 40.9803 47.1279 40.4677 47.4128 39.9363C49.1062 36.7779 50.0004 33.22 50.0004 27.1316V22.7175C50.0004 16.629 49.1062 13.0711 47.4128 9.91273C45.7385 6.75436 43.2461 4.28093 40.0877 2.58758C36.9293 0.894239 33.3714 0 27.283 0H22.8499C17.6644 0 14.2982 0.652754 11.4699 1.89893C11.3153 2.03737 11.1636 2.17818 11.0151 2.32135C2.71734 10.3203 2.08658 27.6593 9.12279 37.0782C9.13064 37.0921 9.13933 37.1061 9.14889 37.1203C10.2334 38.7185 9.18694 41.5154 7.55068 43.1516C7.28431 43.399 7.37944 43.5512 7.779 43.5892Z" fill="white"/>
+            <path d="M20.5632 17H10.8382V19.0853H17.5869L10.9329 27.3317C10.7244 27.635 10.5728 27.9194 10.5728 28.5639V29.0947H19.748C20.203 29.0947 20.5822 28.7156 20.5822 28.2606V27.1421H13.4922L19.748 19.2938C19.8428 19.1801 20.0134 18.9716 20.0893 18.8768L20.1272 18.8199C20.4874 18.2891 20.5632 17.8341 20.5632 17.2844V17Z" fill="#0068FF"/>
+            <path d="M32.9416 29.0947H34.3255V17H32.2402V28.3933C32.2402 28.7725 32.5435 29.0947 32.9416 29.0947Z" fill="#0068FF"/>
+            <path d="M25.814 19.6924C23.1979 19.6924 21.0747 21.8156 21.0747 24.4317C21.0747 27.0478 23.1979 29.171 25.814 29.171C28.4301 29.171 30.5533 27.0478 30.5533 24.4317C30.5723 21.8156 28.4491 19.6924 25.814 19.6924ZM25.814 27.2184C24.2785 27.2184 23.0273 25.9672 23.0273 24.4317C23.0273 22.8962 24.2785 21.645 25.814 21.645C27.3495 21.645 28.6007 22.8962 28.6007 24.4317C28.6007 25.9672 27.3685 27.2184 25.814 27.2184Z" fill="#0068FF"/>
+            <path d="M40.4867 19.6162C37.8516 19.6162 35.7095 21.7584 35.7095 24.3934C35.7095 27.0285 37.8516 29.1707 40.4867 29.1707C43.1217 29.1707 45.2639 27.0285 45.2639 24.3934C45.2639 21.7584 43.1217 19.6162 40.4867 19.6162ZM40.4867 27.2181C38.9322 27.2181 37.681 25.9669 37.681 24.4124C37.681 22.8579 38.9322 21.6067 40.4867 21.6067C42.0412 21.6067 43.2924 22.8579 43.2924 24.4124C43.2924 25.9669 42.0412 27.2181 40.4867 27.2181Z" fill="#0068FF"/>
+            <path d="M29.4562 29.0944H30.5747V19.957H28.6221V28.2793C28.6221 28.7153 29.0012 29.0944 29.4562 29.0944Z" fill="#0068FF"/>
+        </svg>
+
+    </button>
+    </a>
+</div>
+
 <!-- ========================= JS here ========================= -->
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/tiny-slider.js"></script>
 <script src="assets/js/glightbox.min.js"></script>
 <script src="assets/js/count-up.min.js"></script>
+<script src="assets/js/sweet-alert2.min.js"></script>
 <script src="assets/js/main.js"></script>
+
+<script src="assets/js/handle.js"></script>
+
+
 <script type="text/javascript">
 
     //====== counter up
